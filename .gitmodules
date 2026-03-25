@@ -1,0 +1,3 @@
+[submodule "RealLike/physlib"]
+	path = RealLike/physlib
+	url = https://github.com/Oscario0/physlib
