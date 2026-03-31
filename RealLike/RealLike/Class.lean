@@ -71,6 +71,14 @@ private def natPow {α} [RealLike α] (x : α) : Nat → α
   | n + 1 => natPow x n * x
 
 instance {α} [RealLike α] : HPow α Nat α := ⟨fun x n => natPow x n⟩
+instance {α} [RealLike α] : OfScientific α where
+  ofScientific mantissa exponentSign decimalExponent :=
+    let base : α := RealLike.ofNat mantissa
+    let scale : α := natPow (α := α) (RealLike.ofNat 10) decimalExponent
+    if exponentSign then
+      RealLike.div base scale
+    else
+      RealLike.mul base scale
 instance {α} [RealLike α] : LE α := ⟨fun a b => RealLike.le a b = true⟩
 instance {α} [RealLike α] : LT α := ⟨fun a b => RealLike.lt a b = true⟩
 instance {α} [RealLike α] : Min α := ⟨fun a b => if RealLike.le a b then a else b⟩

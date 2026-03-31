@@ -42,7 +42,9 @@ LEAN_EXPORT lean_object* lp_RealLike_instDivOfRealLike___redArg(lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instMulOfRealLike___redArg___boxed(lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instAddOfRealLike___redArg___boxed(lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike___private_RealLike_Class_0__natPow(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instSubOfRealLike___redArg___lam__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike___redArg(lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instHPowNatOfRealLike___redArg___lam__0___boxed(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instAddOfRealLike(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instZeroOfRealLike(lean_object*, lean_object*);
@@ -57,6 +59,7 @@ LEAN_EXPORT lean_object* lp_RealLike_instAddOfRealLike___boxed(lean_object*, lea
 LEAN_EXPORT lean_object* lp_RealLike_instLEOfRealLike(lean_object*, lean_object*);
 lean_object* lean_nat_sub(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instSubOfRealLike(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike___redArg___lam__0(lean_object*, lean_object*, uint8_t, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instOneOfRealLike(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instHPowNatOfRealLike(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instOneOfRealLike___redArg(lean_object*);
@@ -66,6 +69,7 @@ LEAN_EXPORT lean_object* lp_RealLike_instNegOfRealLike(lean_object*, lean_object
 LEAN_EXPORT lean_object* lp_RealLike_instHPowOfRealLike___boxed(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instNegOfRealLike___redArg___boxed(lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instMinOfRealLike___redArg___lam__0(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike___redArg___lam__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_RealLike_instAddOfRealLike___redArg(lean_object* x_1) {
 _start:
 {
@@ -458,6 +462,65 @@ _start:
 {
 lean_object* x_3; 
 x_3 = lean_alloc_closure((void*)(lp_RealLike_instHPowNatOfRealLike___redArg___lam__0___boxed), 3, 1);
+lean_closure_set(x_3, 0, x_2);
+return x_3;
+}
+}
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike___redArg___lam__0(lean_object* x_1, lean_object* x_2, uint8_t x_3, lean_object* x_4) {
+_start:
+{
+lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; lean_object* x_9; lean_object* x_10; lean_object* x_11; 
+x_5 = lean_ctor_get(x_1, 1);
+lean_inc(x_5);
+x_6 = lean_ctor_get(x_1, 2);
+lean_inc(x_6);
+x_7 = lean_ctor_get(x_1, 8);
+lean_inc(x_7);
+x_8 = lean_apply_1(x_7, x_2);
+x_9 = lean_unsigned_to_nat(10u);
+lean_inc(x_7);
+x_10 = lean_apply_1(x_7, x_9);
+x_11 = lp_RealLike___private_RealLike_Class_0__natPow___redArg(x_1, x_10, x_4);
+if (x_3 == 0)
+{
+lean_object* x_12; 
+lean_dec(x_6);
+x_12 = lean_apply_2(x_5, x_8, x_11);
+return x_12;
+}
+else
+{
+lean_object* x_13; 
+lean_dec(x_5);
+x_13 = lean_apply_2(x_6, x_8, x_11);
+return x_13;
+}
+}
+}
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike___redArg___lam__0___boxed(lean_object* x_1, lean_object* x_2, lean_object* x_3, lean_object* x_4) {
+_start:
+{
+uint8_t x_5; lean_object* x_6; 
+x_5 = lean_unbox(x_3);
+x_6 = lp_RealLike_instOfScientificOfRealLike___redArg___lam__0(x_1, x_2, x_5, x_4);
+lean_dec(x_4);
+return x_6;
+}
+}
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike___redArg(lean_object* x_1) {
+_start:
+{
+lean_object* x_2; 
+x_2 = lean_alloc_closure((void*)(lp_RealLike_instOfScientificOfRealLike___redArg___lam__0___boxed), 4, 1);
+lean_closure_set(x_2, 0, x_1);
+return x_2;
+}
+}
+LEAN_EXPORT lean_object* lp_RealLike_instOfScientificOfRealLike(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; 
+x_3 = lean_alloc_closure((void*)(lp_RealLike_instOfScientificOfRealLike___redArg___lam__0___boxed), 4, 1);
 lean_closure_set(x_3, 0, x_2);
 return x_3;
 }

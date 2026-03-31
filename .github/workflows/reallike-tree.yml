@@ -1,0 +1,49 @@
+name: RealLike Tree
+
+on:
+  push:
+    paths:
+      - "RealLike/**"
+      - ".github/workflows/reallike-tree.yml"
+  pull_request:
+    paths:
+      - "RealLike/**"
+      - ".github/workflows/reallike-tree.yml"
+  workflow_dispatch:
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: RealLike
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install elan
+        shell: bash
+        run: |
+          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Use toolchain from lean-toolchain
+        run: |
+          elan toolchain install "$(cat lean-toolchain)"
+          elan default "$(cat lean-toolchain)"
+          lean --version
+
+      - name: Update dependencies
+        run: lake update
+
+      - name: Fetch dependency cache
+        run: lake exe cache get
+
+      - name: Build RealLike
+        run: lake build RealLike
+
+      - name: Build PhysLean dependency
+        run: lake build PhysLean
+
+      - name: Run Tree demo
+        run: lake env lean Examples/PhysLeanDemo.lean

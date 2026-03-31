@@ -1,1 +1,1 @@
-{"decls":{},"directImports":[["RealLike.Class",false,false,false],["RealLike.Instances",false,false,false],["RealLike.Derived",false,false,false]],"module":"RealLike","references":{},"version":5}
+{"decls":{},"directImports":[["RealLike.Class",false,false,false],["RealLike.Instances",false,false,false],["RealLike.Repr",false,false,false],["RealLike.Derived",false,false,false]],"module":"RealLike","references":{},"version":5}

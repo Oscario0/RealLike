@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: RealLike
-// Imports: public import Init public import RealLike.Class public import RealLike.Instances public import RealLike.Derived
+// Imports: public import Init public import RealLike.Class public import RealLike.Instances public import RealLike.Repr public import RealLike.Derived
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -16,6 +16,7 @@ extern "C" {
 lean_object* initialize_Init(uint8_t builtin);
 lean_object* initialize_RealLike_RealLike_Class(uint8_t builtin);
 lean_object* initialize_RealLike_RealLike_Instances(uint8_t builtin);
+lean_object* initialize_RealLike_RealLike_Repr(uint8_t builtin);
 lean_object* initialize_RealLike_RealLike_Derived(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_RealLike_RealLike(uint8_t builtin) {
@@ -29,6 +30,9 @@ res = initialize_RealLike_RealLike_Class(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_RealLike_RealLike_Instances(builtin);
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_RealLike_RealLike_Repr(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_RealLike_RealLike_Derived(builtin);
