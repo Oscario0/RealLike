@@ -1,6 +1,0 @@
-[submodule "RealLike/physlib"]
-	path = RealLike/physlib
-	url = https://github.com/Oscario0/physlib
-[submodule "LeanBET"]
-	path = LeanBET
-	url = https://github.com/ATOMSLab/LeanBET
