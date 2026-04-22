@@ -11,12 +11,10 @@ on:
       - ".github/workflows/reallike-tree.yml"
   workflow_dispatch:
 
-env:
-  RUN_PIPELINE: "false"
-
 jobs:
   integration:
-    if: ${{ env.RUN_PIPELINE == 'true' }}
+    if: ${{ vars.RUN_PIPELINE != 'false' }}
+
     runs-on: ubuntu-latest
     defaults:
       run:
