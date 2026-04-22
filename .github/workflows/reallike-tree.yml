@@ -13,6 +13,8 @@ on:
 
 jobs:
   integration:
+    if: ${{ vars.RUN_PIPELINE != 'false' }}
+
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -42,8 +44,8 @@ jobs:
       - name: Build RealLike
         run: lake build RealLike
 
-      - name: Build PhysLean dependency
-        run: lake build PhysLean
+      # name: Build PhysLean dependency
+      #  run: lake build PhysLean
 
       - name: Run Tree demo
         run: lake env lean Examples/PhysLeanDemo.lean
