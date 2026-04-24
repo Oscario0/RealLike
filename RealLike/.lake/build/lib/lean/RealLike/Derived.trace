@@ -1,12 +1,12 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["f6bd5a43e46ac4da.olean"],
-  "i": "e7e03d0312ede9fc.ilean",
+ {"o": ["af3eccabbdfd9d85.olean"],
+  "i": "da599ad7654ed6f9.ilean",
   "c": "ab89309c16863754.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/MD4Lean/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/BibtexQuery/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/UnicodeBasic/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/doc-gen4/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/Cli/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/batteries/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/Qq/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/aesop/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/importGraph/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/plausible/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/PhysLean/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/LeanBisection/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/mathlib/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean /Users/oscario/.elan/toolchains/leanprover--lean4---v4.28.0/bin/lean /Users/oscario/Documents/Lean/Archive/RealLike/RealLike/Derived.lean -o /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean/RealLike/Derived.olean -i /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean/RealLike/Derived.ilean -c /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/ir/RealLike/Derived.c --setup /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/ir/RealLike/Derived.setup.json --json",
+   ".> LEAN_PATH=/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/MD4Lean/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/BibtexQuery/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/UnicodeBasic/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/doc-gen4/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/Cli/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/batteries/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/Qq/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/aesop/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/importGraph/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/plausible/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/PhysLean/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/LeanBisection/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/BET/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/mathlib/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean /Users/oscario/.elan/toolchains/leanprover--lean4---v4.28.0/bin/lean /Users/oscario/Documents/Lean/Archive/RealLike/RealLike/Derived.lean -o /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean/RealLike/Derived.olean -i /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean/RealLike/Derived.ilean -c /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/ir/RealLike/Derived.c --setup /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/ir/RealLike/Derived.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["RealLike.Derived:deps",
@@ -24,11 +24,11 @@
   ["Lean 4.28.0, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
    "a96bc04a2e5e9630"],
   ["/Users/oscario/Documents/Lean/Archive/RealLike/RealLike/Derived.lean",
-   "93955befc83670e6"],
+   "046231b58a09a895"],
   ["options",
    [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
     ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
     ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
     ["-Dpp.unicode.fun=true", "9b94070140457fab"]]],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "0f01bf0794d166cf"}
+ "depHash": "bc7ebc1f51e27ac2"}

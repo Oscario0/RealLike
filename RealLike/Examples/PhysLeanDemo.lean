@@ -6,14 +6,6 @@ import PhysLean.SpaceAndTime.Time.Basic
 import PhysLean.Thermodynamics.Temperature.Basic
 import PhysLean.Units.WithDim.Basic
 
-/-!
-# Demo: `#evalf` on physlib wrappers
-
-This file keeps physlib-facing regression examples separate from the core
-`RealLike` demo. The goal is to exercise actual PhysLean wrapper types that
-the `#evalf` bridge is expected to handle.
--/
-
 open PhysLean
 open Constants
 
