@@ -1,0 +1,45 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["f8b9369104a1636b.olean"],
+  "i": "89a115b1053d4952.ilean",
+  "c": "da7dcc2f65291219.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/MD4Lean/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/BibtexQuery/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/UnicodeBasic/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/doc-gen4/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/Cli/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/batteries/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/Qq/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/aesop/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/importGraph/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/plausible/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/PhysLean/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/LeanBisection/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/BET/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/packages/mathlib/.lake/build/lib/lean:/Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean /Users/oscario/.elan/toolchains/leanprover--lean4---v4.28.0/bin/lean /Users/oscario/Documents/Lean/Archive/RealLike/RealLike/Raising.lean -o /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean/RealLike/Raising.olean -i /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/lib/lean/RealLike/Raising.ilean -c /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/ir/RealLike/Raising.c --setup /Users/oscario/Documents/Lean/Archive/RealLike/.lake/build/ir/RealLike/Raising.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "RealLike/Raising.lean:19:0: Please, write a comment here or remove this line, but do not place empty lines within commands!\nContext:\n                   ↓\n  ⏎    return realN⏎⏎  let genName := genericName constName⏎\n\nNote: This linter can be disabled with `set_option linter.style.emptyLine false`",
+   "level": "warning"},
+  {"message":
+   "RealLike/Raising.lean:25:0: Please, write a comment here or remove this line, but do not place empty lines within commands!\nContext:\n                                                                                 ↓\n  ⏎    | none => throwError \"generic '{genName}' not found... run realToGeneric \"⏎⏎  let realExpr := mkConst ``Real⏎\n\nNote: This linter can be disabled with `set_option linter.style.emptyLine false`",
+   "level": "warning"},
+  {"message":
+   "RealLike/Raising.lean:31:0: Please, write a comment here or remove this line, but do not place empty lines within commands!\nContext:\n                                                              ↓\n  ⏎  let realType ← instantiateMVars (← inferType specialized)⏎⏎  let decl : Declaration := .defnDecl {⏎\n\nNote: This linter can be disabled with `set_option linter.style.emptyLine false`",
+   "level": "warning"}],
+ "inputs":
+ [["RealLike.Raising:deps",
+   [["deps",
+     [["RealLike/RealLike:extraDep",
+       [["@RealLike:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["RealLike.Lowering transitive imports (legacy)", "27fb528adaf7359c"],
+        ["RealLike.Lowering:importAllArts", "a8f8245b0f24f66b"],
+        ["RealLike.Instances transitive imports (legacy)", "497dab6dd4a9b95e"],
+        ["RealLike.Instances:importAllArts", "727334233e3ee87a"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.28.0, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
+   "a96bc04a2e5e9630"],
+  ["/Users/oscario/Documents/Lean/Archive/RealLike/RealLike/Raising.lean",
+   "361763626df6e231"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
+    ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
+    ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
+    ["-Dpp.unicode.fun=true", "9b94070140457fab"]]],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "e25e3766736b4355"}

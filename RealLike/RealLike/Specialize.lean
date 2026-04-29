@@ -3,8 +3,6 @@ import RealLike.Lowering
 open Lean Lean.Meta Lean.Elab
 
 namespace RealLike
-
-/-- Register the Float-specialized version of a generic lowered definition. -/
 def specializeToFloat (constName : Name) : MetaM Name := do
   let floatN := floatName constName
   if (← getEnv).find? floatN |>.isSome then
