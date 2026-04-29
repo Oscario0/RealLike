@@ -24,7 +24,7 @@ This is highlighted by two related ideas:
 
 This project started from a common practical pain point in Lean code: the
 same quantities and/or models often had to be declared multiple times, once per
-numeric type.
+numeric type, which is very unreliable at scale.
 
 Typical workflow looked like this:
 
@@ -32,7 +32,7 @@ Typical workflow looked like this:
 - redeclare an executable version over `Float` for experiments
 - keep both versions manually synchronized as the code grows
 
-Now proofs and tests are no longer talking about the same model.
+Now proofs and tests are no longer talking about the same model, they are thesame.
 
 `RealLike` is the pattern used here to avoid that split:
 That duplication is quite error-prone, especially for larger codebases
@@ -67,7 +67,7 @@ close to the mathematically stated source.
 
 For analysis and physics workflows, the goal is not to pretend `Real` and
 `Float` are fully equivalent. The goal is to keep one equation-level model
-coherent across proofs and execution.
+coherent across proofs and execution. It must be reliable.
 
 This matters for three reasons:
 
