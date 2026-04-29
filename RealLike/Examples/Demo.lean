@@ -1,15 +1,6 @@
 import RealLike
 import RealLike.Evalf
 
-/-!
-# Demo: `#evalf` and `evalf%` on `RealLike`-polymorphic functions
-
-Write functions once against `[RealLike α]`, prove facts by instantiating `α := ℝ`,
-and evaluate numerically by instantiating `α := Float`.
--/
-
--- Polymorphic definitions: already written against `[RealLike α]`.
-
 def linear {α} [RealLike α] (x : α) : α := (x + 5) / 6
 #evalf linear 3
 #evalf linear (-5)
@@ -57,8 +48,6 @@ def polarY {α} [RealLike α] (r θ : α) : α := r * RealLike.sin θ
 #eval (evalf% linear 3)
 #eval (evalf% hypotenuse 3.0 4.0)
 #eval (evalf% growthModel 1.0 1.0)
-
--- Concrete `ℝ` definitions: lowered to `RealLike`, then specialized to `Float`.
 
 noncomputable def linearR (x : ℝ) : ℝ := (x + 5) / 6
 #evalf linearR 3

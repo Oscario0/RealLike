@@ -8,12 +8,8 @@ private def withDimName : Name := .str .anonymous "WithDim"
 private def withDimValName : Name := .str withDimName "val"
 private def withDimMkName : Name := .str withDimName "mk"
 private def withDimCastName : Name := .str withDimName "cast"
-
-/-- Hidden name for the generic (∀ {α} [RealLike α]) version of a Real function. -/
 def genericName (constName : Name) : Name :=
   .str (.str `_evalf constName.toString) "_generic"
-
-/-- Hidden name for the Float-specialized version. -/
 def floatName (constName : Name) : Name :=
   .str (.str `_evalf constName.toString) "_float"
 
