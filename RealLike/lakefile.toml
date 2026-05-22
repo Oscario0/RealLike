@@ -1,6 +1,7 @@
 name = "RealLike"
 version = "0.1.0"
 keywords = ["math"]
+testDriver = "Examples"
 defaultTargets = ["RealLike"]
 
 [leanOptions]
@@ -31,3 +32,8 @@ rev = "v4.28.0"
 
 [[lean_lib]]
 name = "RealLike"
+globs = ["RealLike.*"]
+
+[[lean_lib]]
+name = "Examples"
+globs = ["Examples.+"]
